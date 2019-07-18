@@ -18,7 +18,7 @@ const purchaseSummary = (props) => {
             <ul>
                 {updatedIngredients}
             </ul>
-            <button onClick={props.updatePurchasing}>Cancel</button>
+            <button onClick={props.closeModal}>Cancel</button>
             <button onClick={() => alert('Order confirmed')}>Continue</button>
         </div>
     );
