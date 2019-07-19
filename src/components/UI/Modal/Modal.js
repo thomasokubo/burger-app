@@ -1,17 +1,17 @@
 import React from 'react';
 import classes from './Modal.module.css'
-import Aux from '../../../hoc/Aux';
+import Wrapper from '../../../hoc/wrapper';
 import Backdrop from '../Backdrop/Backdrop';
 
 const modal = (props) => {
     if(props.visible) {
         return (
-            <Aux>
+            <Wrapper>
                 <Backdrop show={props.visible} clicked={props.closeModal}/>
                 <div className={classes.Modal}>
                     {props.children}
                 </div>
-            </Aux>
+            </Wrapper>
         );
     }
     return null;
