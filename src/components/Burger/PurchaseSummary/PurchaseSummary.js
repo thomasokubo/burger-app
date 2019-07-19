@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './PurchaseSummary.module.css';
+import Button from '../../UI/Button/Button';
 
 const purchaseSummary = (props) => {
 
@@ -13,13 +14,15 @@ const purchaseSummary = (props) => {
         });
 
     return (
-        <div>
-            <h3>Checkout your order</h3>
+        <div className={classes.PurchaseSummary}>
+            <h3>Your order</h3>
             <ul>
                 {updatedIngredients}
             </ul>
-            <button onClick={props.closeModal}>Cancel</button>
-            <button onClick={() => alert('Order confirmed')}>Continue</button>
+
+            <p><strong>Checkout to continue?</strong></p>
+            <Button btnType='Danger' clicked={props.closeModal}>Cancel</Button>
+            <Button btnType='Success' clicked={() => alert('Order confirmed')}>Continue</Button>
         </div>
     );
 
