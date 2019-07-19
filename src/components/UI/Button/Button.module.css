@@ -1,0 +1,15 @@
+.Button {
+    font: inherit;
+    width: 88px;
+    height: 32px;
+}
+
+.Danger {
+    background-color: red;
+    color: white;
+}
+
+.Success {
+    background-color: green;
+    color:white;
+}
