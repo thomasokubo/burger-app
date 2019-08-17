@@ -1,7 +1,7 @@
 import React from 'react';
 import Wrapper from '../../hoc/wrapper';
 import classes from './Layout.module.css';
-import Toolbar from '../UI/Toolbar/Toolbar';
+import Toolbar from '../UI/Navigation/Toolbar/Toolbar';
 
 const layout = (props) => (
     <Wrapper>
