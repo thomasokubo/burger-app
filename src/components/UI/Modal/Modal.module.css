@@ -1,12 +1,19 @@
 .Modal {
     box-shadow: 1px 1px 1px 1px black;
-    width: 30%;
+    width: 70%;
     background-color: whitesmoke;
     position: fixed;
     z-index: 500;
     border: 1px solid #ccc;
     padding: 16px;
-    left: 35%;
+    left: 15%;
     top: 30%;
     box-sizing: border-box;
+}
+
+@media (min-width: 500px) {
+    .Modal {
+        width: 40%;
+        left: 30%;
+    }  
 }
