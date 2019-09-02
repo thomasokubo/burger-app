@@ -1,0 +1,19 @@
+.Button {
+    font: inherit;
+    width: 88px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Danger {
+    background-color: #f44336;
+    color: white;
+}
+
+.Success {
+    background-color: #4CAF50;
+    color:white;
+}
