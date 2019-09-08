@@ -22,7 +22,7 @@ const purchaseSummary = (props) => {
 
             <p><strong>Checkout to continue?</strong></p>
             <Button btnType='Danger' clicked={props.closeModal}>Cancel</Button>
-            <Button btnType='Success' clicked={() => alert('Order confirmed')}>Continue</Button>
+            <Button btnType='Success' clicked={props.purchaseOrder}>Continue</Button>
         </div>
     );
 
