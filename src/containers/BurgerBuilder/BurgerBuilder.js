@@ -29,7 +29,6 @@ class BurgerBuilder extends Component {
             totalPrice: 4,
             purchasable: false,
             purchasing: false,
-            loading: false
         }
     }
 
@@ -97,6 +96,7 @@ class BurgerBuilder extends Component {
             queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
         }
 
+        queryParams.push('price=' + this.state.totalPrice);
         const queryString = queryParams.join('&');
         
         this.props.history.push({
